@@ -25,6 +25,17 @@
       text-align: center;
       padding: 20px;
     }
+    .navbar {
+            height: 30px; /* Set a fixed height for the navbar */
+            width: 100%;
+            background-color: #ffc107;
+            color: #4285f4;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-sizing: border-box;
+    }
 
     nav {
       background-color: #ffc107;
@@ -35,7 +46,7 @@
     nav img {
             width: auto;
             height: 100%;
-        }
+    }
 
     nav a {
       font-family: 'Arial Black', sans-serif;
@@ -75,16 +86,16 @@
 
 <body>
   <header>Welcome to FunValueCoin</header>
-  
-  <nav>
-    <img src="logo.png" alt="FunValueCoin Logo">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#presale">Presale soon</a>
-    <a href="Dark Green and Orange Friendly Professional General Proposal.pdf" target="_blank">Whitepaper</a>
-    <button id="connectWalletButton" onclick="connectWallet()">Connect Wallet</button>
-
-  </nav>
+  <div class="navbar">
+    <nav>
+      <img src="logo.png" alt="FunValueCoin Logo">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#presale">Presale soon</a>
+      <a href="Dark Green and Orange Friendly Professional General Proposal.pdf" target="_blank">Whitepaper</a>
+      <button id="connectWalletButton" onclick="connectWallet()">Connect Wallet</button>
+    </nav>
+  </div>
   <section id="about">
     🚀 Ready to take your crypto journey to the next level? 🌟<br>
 
