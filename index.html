@@ -1,102 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html data-bs-theme="light" lang="en">
 
 <head>
-  <title>FunValueCoin</title>
-  <style>
-    body {
-      font-family: 'Arial Black', sans-serif;
-      text-align: center;
-      margin: 0;
-      padding: 20px;
-      background-color: #4285f4;
-      color: #ffffff;
-    }
-
-    header {
-      font-family: 'Arial Black', sans-serif;
-      font-size: 30px;
-      text-align: center;
-      padding: 20px;
-    }
-
-    nav {
-      max-height: 80px;
-      background-color: #ffc107;
-      color: #4285f4;
-      padding: 0;
-      text-align: center;
-    }
-
-    nav a {
-      font-family: 'Arial Black', sans-serif;
-      margin: 20px 20px;
-      color: #4285f4;
-      font-size: 20px;
-      text-decoration: none;
-      padding: 0;
-    }
-
-    footer {
-      background-color: #ffc107;
-      color: #4285f4;
-      text-align: center;
-      padding: 15px;
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-    }
-
-    button {
-      font-family: 'Arial Black', sans-serif;
-      background-color: #4285f4;
-      color: #ffc107;
-      border: none;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 20px;
-      margin: 4px 2px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>FunValueCoin whitepaper - Documentation</title>
+    <link rel="icon" type="image/png" sizes="200x200" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="200x200" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="200x200" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="200x200" href="assets/img/logo.png">
+    <link rel="icon" type="image/png" sizes="500x500" href="assets/img/FVC%20Logo.png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/prettify.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#presale">Presale soon</a>
-    <a href="Dark Green and Orange Friendly Professional General Proposal.pdf" target="_blank">Whitepaper</a>
-    <button id="connectWalletButton" onclick="connectWallet()">Connect Wallet</button>
-  </nav>
-  <header>Welcome to FunValueCoin</header>
-  <section id="about">
-    🚀 Ready to take your crypto journey to the next level? 🌟<br>
-
-    While everyone dreams of owning their own Lambo in the world of crypto, we're here to offer <br>
-    you something even better! Introducing FunValueCoin (FVC) - the memecoin with limitless potential. 🚀💰<br><br>
-
-    Forget just the Lambo, with FVC, we're talking luxury yachts and beyond! 🌊⛵️<br>
-    Our innovative project combines fun, value, and the excitement of the crypto world. <br>
-    Join us on this thrilling adventure and unlock a world of possibilities.<br><br>
-
-    🎉 With a transparent and secure Ethereum-based contract, we're ready to redefine the memecoin game. <br>
-    Our vibrant community is buzzing with creative memes, hilarious jokes, and engaging content. <br>
-    Join us on Twitter, where laughter meets crypto expertise! 😂💎<br><br>
-
-    But that's not all! Get ready for exclusive rewards, unique NFTs, and surprises along the way. <br>
-    As we sail through the crypto seas, we're determined to make waves and create an unforgettable experience for our
-    amazing community.<br><br>
-
-    So buckle up, my friends, and let's set sail towards the future of memecoins. Remember,<br>
-    the journey is just as exciting as the destination! ⚓️💫
-  </section>
-  <footer>Copyright &copy; 2023 FunValueCoin</footer>
-  <script src="web3connect.js"></script>
+    <header>
+        <div class="container">
+            <h2 class="lone-header" style="font-size: 60px;"><img style="padding:5px 0;" src="assets/img/txlogo.png" alt="" width="361" height="91"><span style="color: rgb(255, 193, 7);">Whitepaper</span></h2>
+        </div>
+    </header>
+    <div class="wrapper">
+        <section>
+            <div class="container" style="padding-right: 0px;padding-left: 0px;margin-right: 0px;margin-left: 0px;">
+                <div class="row">
+                    <div class="col-md-6 col-lg-5 col-xl-4 col-xxl-4 d-none d-sm-none d-md-block d-lg-block">
+                        <ul class="d-block d-sm-block d-md-block d-lg-block d-xl-block d-xxl-block visible docs-nav" style="border-style: none;transform-origin: left;max-height: 600px;overflow-y: scroll;width: 272px;position: sticky;">
+                            <li style="color: #ffc107;"><strong>1. Introduction 🚀</strong></li>
+                            <li><a href="#background" class="cc-active">1.1 Background</a></li>
+                            <li><a href="#purpose" class="cc-active">1.2 Purpose of the Whitepaper</a></li>
+                            <li><a href="#disclaimer" class="cc-active">1.3 Disclaimer</a></li>
+                            <li style="color: #ffc107;"><strong>2. FunValueCoin Overview 🌐</strong></li>
+                            <li><a href="#what-is-funvaluecoin" class="cc-active">2.1 What is FunValueCoin?</a></li>
+                            <li><a href="#the-funvaluecoin-token" class="cc-active">2.2 The FunValueCoin Token (FVC)</a></li>
+                            <li><a href="#the-funvaluecoin-platform" class="cc-active">2.3 The FunValueCoin Platform</a></li>
+                            <li style="color: #ffc107;"><strong>3. Vision 👁️</strong></li>
+                            <li><a href="#our-mission" class="cc-active">3.1 Our Mission</a></li>
+                            <li><a href="#our-values" class="cc-active">3.2 Our Values</a></li>
+                            <li><a href="#future-plans" class="cc-active">3.3 Future Plans</a></li>
+                            <li style="color: #ffc107;"><strong>4. Platform Features 🎁</strong></li>
+                            <li><a href="#user-interaction" class="cc-active">4.1 User Interaction</a></li>
+                            <li><a href="#gamification" class="cc-active">4.2 Gamification</a></li>
+                            <li><a href="#voting-and-rewards" class="cc-active">4.3 Voting and Rewards</a></li>
+                            <li><a href="#trading-platform" class="cc-active">4.4 Trading Platform</a></li>
+                            <li><a href="#multi-chain-mechanisms" class="cc-active" style="margin: 0px;padding: 0px;">4.5 Multi-chain mechanisms</a></li>
+                            <li style="color: #ffc107;"><strong>5. Tokenomics 💹</strong></li>
+                            <li><a href="#token-distribution" class="cc-active">5.1 Token Distribution</a></li>
+                            <li><a href="#token-utility" class="cc-active">5.2 Token Utility</a></li>
+                            <li><a href="#smart-contract-details" class="cc-active">5.3 SmartContractDetails</a></li>
+                            <li style="color: #ffc107;"><strong>6. Roadmap 🗺️</strong></li>
+                            <li><a href="#roadmap">Roadmap</a></li>
+                            <li style="color: #ffc107;"><strong>7. Community and Marketing 📣</strong></li>
+                            <li><a href="#community-development" class="cc-active">7.1 Community Development</a></li>
+                            <li><a href="#marketing-strategy" class="cc-active">7.2 Marketing Strategy</a></li>
+                            <li><a href="#partnerships-and-collaborations" class="cc-active">7.3 Partnerships and Collaborations</a></li>
+                            <li style="color: #ffc107;"><strong>8. Security and Compliance 🔒</strong></li>
+                            <li><a href="#security-measures" class="cc-active">8.1 Security Measures</a></li>
+                            <li><a href="#compliance" class="cc-active">8.2 Compliance</a></li>
+                            <li style="color: #ffc107;"><strong>9. Conclusion 🏁</strong></li>
+                            <li><a href="#conclusion" class="cc-active">Conclusion</a></li>
+                            <li style="color: #ffc107;"><strong>10. References 📚</strong></li>
+                            <li><a href="#references" class="cc-active">References</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <main>
+                            <section id="introduction" style="padding-bottom: 1px;">
+                                <h1>1. Introduction 🚀</h1>
+                                <section id="background" style="padding-bottom: 0;"><img src="assets/img/c362930b3135eaba2a1cf5e9b66898ef.gif" width="489" height="367" style="backdrop-filter: opacity(1);opacity: 1;filter: blur(0px) brightness(52%) hue-rotate(324deg) saturate(101%) sepia(23%);">
+                                    <h2>1.1 Background</h2>
+                                    <p>The advent of blockchain technology has revolutionized various sectors of the global economy, including finance, supply chain, and entertainment. The ability to create decentralized applications (DApps) on blockchain networks has led to the emergence of innovative solutions that address existing challenges in these sectors. FunValueCoin is one such solution, designed to merge the worlds of fun and value in a unique and engaging way. </p>
+                                </section>
+                                <section id="purpose" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>1.2 Purpose of the Whitepaper</h2>
+                                    <p>This whitepaper provides a comprehensive overview of FunValueCoin, including its vision, platform features, tokenomics, and roadmap. The purpose of this document is to provide potential users and investors with a clear understanding of the value proposition of FunValueCoin and its potential for growth and success in the blockchain industry.</p>
+                                </section>
+                                <section id="disclaimer" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>1.3 Disclaimer</h2>
+                                    <p>This whitepaper is for informational purposes only and does not constitute financial, legal, or other professional advice. Potential users and investors should seek independent professional advice before deciding to use the FunValueCoin platform or invest in the FunValueCoin token (FVC). Please note that investing in cryptocurrencies involves risk, and investors should only invest what they can afford to lose.</p>
+                                </section>
+                            </section>
+                            <section id="overview" style="padding-bottom: 0px;">
+                                <h1 style="font-size: 35px;">2. FunValueCoin Overview 🌐</h1>
+                                <section id="what-is-funvaluecoin" style="padding-bottom: 0;padding-top: 41px;">
+                                    <h2>2.1 What is FunValueCoin?</h2>
+                                    <p>FunValueCoin is a revolutionary blockchain-based platform that aims to merge the worlds of fun and value in a unique and engaging way. Our platform leverages the power of blockchain technology to provide users with gamification, rewarding them for participation and creativity. At the heart of FunValueCoin is our native cryptocurrency, the FVC token, which fuels the platform, enabling users to access various features, participate in activities, and earn rewards.</p><img src="assets/img/ee3a0a299ebc2f35bd52fcfcc6e0402a.jpg">
+                                </section>
+                                <section id="the-funvaluecoin-token" style="padding-top: 0;padding-bottom: 0;">
+                                    <h2>2.2 The FunValueCoin Token (FVC)</h2>
+                                    <p>The FunValueCoin token (FVC) is an ERC-20 token that is powered by a smart contract on the Ethereum blockchain. The FVC token serves multiple utilities on the FunValueCoin platform, including access to features, rewards and incentives, and trading. The smart contract includes mechanisms such as access control, a tax system, the ability to burn tokens, and functions for crisis management and token recovery.</p><img src="assets/img/logo.png" width="120" height="120">
+                                </section>
+                                <section id="the-funvaluecoin-platform" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>2.3 The FunValueCoin Platform</h2>
+                                    <p>The FunValueCoin platform is a vibrant and engaging platform that offers a range of features and applications. Users can create and share fun and entertaining memes, participate in contests and challenges, vote on various matters, and engage with the community. The platform also includes a trading platform where users can trade FVC tokens and other assets.</p><img src="assets/img/5ab67824b3a17af248412b43aa6f2b23.jpg">
+                                </section>
+                            </section>
+                            <section id="vision">
+                                <h1>3. Vision 👁️</h1>
+                                <section id="our-mission" style="padding-bottom: 0;padding-top: 42px;"><img src="assets/img/c231c66bf561fca65d9e23eb934a5f2d.jpg">
+                                    <h2>3.1 Our Mission</h2>
+                                    <p>Our mission is to revolutionize the way people interact and engage with digital platforms by combining fun, creativity, and blockchain technology. We aim to provide users with a platform where they can express their creativity, participate in fun activities, and earn rewards, all powered by our native FVC token.</p>
+                                </section>
+                                <section id="our-values" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>3.2 Our Values</h2>
+                                    <p>We believe in the power of community and aim to build a vibrant and engaged user base. We value creativity and innovation and strive to provide users with a platform where they can express their creativity and earn rewards. We are committed to transparency and integrity and aim to build a platform that is trusted by users.</p>
+                                </section>
+                                <section id="future-plans" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>3.3 Future Plans</h2>
+                                    <p>We have a clear vision for the development and expansion of FunValueCoin. Our future plans include the implementation of an advanced voting and reward system, the launch of our internal trading platform, and the introduction of multi-chain mechanisms. We also plan to continuously improve and update the platform based on user feedback and market requirements.</p>
+                                </section><img src="assets/img/17b4e44bdeddfdc71b0731e2b20fb69d.jpg">
+                            </section>
+                            <section id="features" style="padding-bottom: 0;">
+                                <h1>4. Platform Features 🎁</h1>
+                                <section id="user-interaction" style="padding-bottom: 0;">
+                                    <h2 style="padding-bottom: 0;padding-top: 0;">4.1 User Interaction</h2>
+                                    <p>The FunValueCoin platform offers a range of features that enable user interaction. Users can create and share memes, participate in contests and challenges, vote on various matters, and engage with the community.</p><img src="assets/img/e0dc03b7ea985fde1092ae2bdc1fcb4e.jpg">
+                                </section>
+                                <section id="gamification" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2 style="padding-bottom: 0;padding-top: 0;">4.2 Gamification</h2>
+                                    <p>One of the key features of FunValueCoin is the aspect of gamification. We have implemented a comprehensive reward system, leaderboards, achievements, and tasks to keep users motivated and engaged.</p>
+                                </section>
+                                <section id="voting-and-rewards" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2 style="padding-bottom: 0;padding-top: 0;">4.3 Voting and Rewards</h2>
+                                    <p>The FunValueCoin platform includes a voting system where users can vote on various matters. Users can earn rewards for participating in voting and other activities on the platform.</p><img src="assets/img/24293cfc8d40452de5d64f0c9d4f382d.jpg">
+                                </section>
+                                <section id="trading-platform" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2 style="padding-bottom: 0;padding-top: 0;">4.4 Trading Platform</h2>
+                                    <p>The FunValueCoin platform includes a trading platform where users can trade FVC tokens and other assets. The trading platform is designed to be user-friendly and secure.</p>
+                                </section>
+                                <section id="multi-chain-mechanisms" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>4.5 Multi-chain Mechanisms</h2>
+                                    <p>We plan to introduce multi-chain mechanisms to expand the capabilities and optimize interactions on the platform. This will enable users to interact with multiple blockchains, increasing the versatility and utility of the platform.</p>
+                                </section>
+                            </section>
+                            <section id="tokenomics" style="padding-bottom: 0;">
+                                <h1>5. Tokenomics 💹</h1>
+                                <section id="token-distribution" style="padding-bottom: 0;">
+                                    <h2>5.1 Token Distribution</h2>
+                                    <p>The total supply of FVC tokens is 1,000,000,000. The distribution of the tokens is as follows:<br><br>- 50% - Public Pre-sale<br>- 5% - Team and Advisors<br>- 15% - Community Programs and Rewards<br>- 5% - Strategic Partnerships<br>- 25% - Exchange (DEX,CEX) Liquidity</p>
+                                </section>
+                                <section id="token-utility" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>5.2 Token Utility</h2>
+                                    <p>The FVC token serves multiple utilities on the FunValueCoin platform:<br><br>- <strong>**Access to Features**:</strong> FVC tokens are used to access various features on the platform, such as participating in contests and challenges, voting, and unlocking exclusive features and privileges.<br><br><strong>- **Rewards and Incentives**:</strong> FVC tokens are used as rewards for user participation and creativity. Users can earn FVC tokens by creating and sharing memes, participating in contests and challenges, voting, and engaging with the community.<br><br><strong>- **Trading**:</strong> FVC tokens can be traded on the platform's internal trading platform, providing users with a way to earn profits from their FVC holdings.</p>
+                                </section>
+                                <section id="smart-contract-details" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>5.3 Smart Contract Details</h2>
+                                    <p>The FunValueCoin token (FVC) is an ERC-20 token that is powered by a smart contract on the Ethereum blockchain. The smart contract has been designed with security and flexibility in mind, using the OpenZeppelin library, which is a standard for secure smart contract development. The contract includes mechanisms such as access control, a tax system, the ability to burn tokens, and functions for crisis management and token recovery. All these features align with our intention of creating a secure and trusted environment for our users.</p>
+                                </section>
+                            </section>
+                            <section id="roadmap" style="padding-bottom: 0;">
+                                <h1>6. Roadmap 🗺️</h1>
+                                <section id="community-development-1" style="padding-bottom: 0;"><img src="assets/img/a906e8a51461f014dc9a1956bcd3963d.jpg">
+                                    <p>Our roadmap provides a clear vision of the development and expansion of FunValueCoin. Our action plan includes the launch of the platform with an initial set of features, followed by continuous improvements and updates based on user feedback and market requirements. We plan to expand our ecosystem by collaborating with other projects and exploring partnership opportunities.</p>
+                                </section>
+                            </section>
+                            <section id="community" style="padding-bottom: 0;">
+                                <h1>7. Community and Marketing 📣</h1>
+                                <section id="community-development" style="padding-bottom: 0;"><img src="assets/img/5ba1edfd9cb3f8ca4a2c49d81d4cb842.jpg">
+                                    <h2>7.1 Community Development</h2>
+                                    <p>We believe in the power of community and aim to build a vibrant and engaged user base. We plan to implement various community programs and rewards to incentivize user participation and engagement. We also plan to conduct regular community meetings and Q&amp;A sessions to keep our community informed and engaged.</p>
+                                </section>
+                                <section id="marketing-strategy" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>7.2 Marketing Strategy</h2>
+                                    <p>Our marketing strategy includes a mix of online and offline marketing activities, including social media marketing, content marketing, influencer marketing, PR, and events. We aim to reach a global audience and attract users to our platform.</p>
+                                </section>
+                                <section id="partnerships-and-collaborations" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>7.3 Partnerships and Collaborations</h2>
+                                    <p>We plan to collaborate with other projects and explore partnership opportunities to expand our ecosystem and provide more value to our users.</p>
+                                </section>
+                            </section>
+                            <section id="security" style="padding-bottom: 0;">
+                                <h1>8. Security and Compliance 🔒</h1>
+                                <section id="security-measures" style="padding-bottom: 0;"><img src="assets/img/3ca90916fd91bf2b150bd532f3d18a0c.jpg" style="opacity: 1;filter: blur(3px);">
+                                    <h2>8.1 Security Measures</h2>
+                                    <p>Security is of utmost importance to us. We have implemented advanced security measures, including smart contract audits, regular security checks, and encryption protocols, to ensure the security of user funds and data. We are also exploring the integration of AI-based security mechanisms to detect and prevent spam and fraudulent activities.</p>
+                                </section>
+                                <section id="compliance" style="padding-bottom: 0;padding-top: 0;">
+                                    <h2>8.2 Compliance</h2>
+                                    <p>We are committed to complying with all relevant laws and regulations in the jurisdictions we operate in. We are working with legal advisors to ensure our platform and operations are fully compliant.</p>
+                                </section>
+                            </section>
+                            <section id="conclusion" style="padding-bottom: 0;margin-top: 0px;">
+                                <h1>9. Conclusion 🏁</h1>
+                                <p style="padding-top: 54px;">FunValueCoin aims to revolutionize the way people interact and engage with digital platforms by combining fun, creativity, and blockchain technology. We believe in the power of community and aim to build a vibrant and engaged user base. We invite you to join us on this exciting journey as we change the future of fun and value!</p>
+                            </section>
+                            <section id="references" style="padding-bottom: 0;">
+                                <h1>10. References 📚</h1>
+                                <p style="padding-top: 54px;"><strong><span style="color: rgb(66, 133, 244);">[1] Ethereum.</span></strong> (n.d.). Ethereum is a global, open-source platform for decentralized applications. Retrieved from <a href="https://ethereum.org/"><strong><span style="color: rgb(255, 160, 0);">ethereum.org</span></strong></a><br><strong><span style="color: rgb(66, 133, 244);">[2] OpenZeppelin</span></strong>. (n.d.). OpenZeppelin: Secure, tested and community-audited code for Ethereum. Retrieved from <a href="https://openzeppelin.com"><strong><span style="color: rgb(255, 160, 0);">openzeppelin.com</span></strong></a></p>
+                            </section>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <p><strong><span style="color: rgb(66, 133, 244);">© 2023 All Rights Reserved. Designed by FunValueCoin</span></strong></p>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/layout.js"></script>
 </body>
 
 </html>
